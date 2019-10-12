@@ -1,29 +1,40 @@
 class Adult
+  attr_reader :drinks
 
-  def initialize(drinks)
+  def initialize
     @drinks = 0
   end
 
   def consume_an_alcoholic_beverage
-     @drinks += 1
+    @drinks += 1
   end
 
   def sober?
-    if
-      @drinks = 0
-      p "Adult should really be sober right now."
-    else if
-      @drinks = 1
-      p "Still sober."
-    else if
-      @drinks = 2
-      p "Not drunk yet."
-    else if
-      @drinks = 3
-      p "Yeah, OK. The adult is drunk."
+    if @drinks <= 2
+      return true
     else
-      p "The adult doesn't get more sober from drinking more."
+      return false
     end
-  end
+
+    if
+      @drinks == 0
+      "Adult should really be sober right now."
+      else if
+        @drinks == 1
+        "Still sober."
+        else if
+          @drinks == 2
+          "Not drunk yet."
+          else if
+            @drinks == 3
+            "Yeah, OK. The adult is drunk."
+            else
+              @drinks >=3
+              "The adult doesn't get more sober from drinking more."
+            end
+          end
+        end
+      end
+    end
 
 end
