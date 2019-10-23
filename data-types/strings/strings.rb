@@ -156,7 +156,7 @@ class StringTest < Minitest::Test
   def test_17
     greeting = "Hello World!"
     # In place of the line below, call a method to get the number of vowels in the string
-    actual = greeting.count("l")
+    actual = greeting.count("aeiou")
     expected = 3
 
     assert_equal expected, actual
@@ -165,7 +165,7 @@ class StringTest < Minitest::Test
   def test_18
     greeting = "Hello World!"
     # In place of the line below, call a method to check if the string includes 'llo'
-    actual = greeting.length != 1
+    actual = greeting.include?("llo")
     expected = true
 
     assert_equal expected, actual
