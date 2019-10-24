@@ -12,12 +12,12 @@ class IntsAndFloatsTests < Minitest::Test
   end
 
   def test_2
-    skip
+    # skip
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # subtract the unlucky from the lucky
-    difference = ________
+    difference = lucky - unlucky
     assert_equal -6, difference
   end
 
@@ -43,50 +43,48 @@ class IntsAndFloatsTests < Minitest::Test
   end
 
   def test_5
-    skip
+    # skip
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # find the remainder of the unlucky divided by the lucky
-    remainder = ____________
+    remainder = unlucky - lucky
     assert_equal 6, remainder
   end
 
   def test_6
-    skip
+    # skip
     lucky = 7
     # Using the variable defined above,
     # find out if the lucky number is even
-    even = _________
+    even = lucky.even?
     assert_equal false, even
   end
 
   def test_7
-    skip
+    # skip
     pi = 3.14
     # Using the variable defined above,
     # round the number to the nearest whole number
-    rounded = _________
+    rounded = pi.round
     assert_equal 3, rounded
   end
 
   def test_8
-    skip
+    # skip
     pi = 3.14
     # Using the variable defined above,
     # round the number to one decimal place
-    rounded = _________
+    rounded = pi.round(1)
     assert_equal 3.1, rounded
   end
 
-
-
   def test_9
-    skip
+    # skip
     pi = 3.14
     # Using the variable defined above,
     # round the number to the next highest whole number
-    rounded = _________
+    rounded = pi.ceil
     assert_equal 4, rounded
   end
 end
